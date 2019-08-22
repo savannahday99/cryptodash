@@ -1,3 +1,5 @@
+Note: This project was built for a React Data Visualization Course by react.school\_
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
