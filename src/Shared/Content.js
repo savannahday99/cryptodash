@@ -8,7 +8,7 @@ export default function(props) {
         if (!coinList) {
           return <div> Loading Coins </div>;
         }
-        return <div> {props.children} </div>;
+        return <div key={props.children}> {props.children} </div>;
       }}
     </AppContext.Consumer>
   );
