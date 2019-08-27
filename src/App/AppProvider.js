@@ -10,14 +10,15 @@ export class AppProvider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      page: "settings",
+      page: "dashboard",
       favorites: ["BTC", "ETH", "XMR", "DOGE"],
       ...this.savedSettings(),
       setPage: this.setPage,
       addCoin: this.addCoin,
       removeCoin: this.removeCoin,
       isInFavorites: this.isInFavorites,
-      confirmFavorites: this.confirmFavorites
+      confirmFavorites: this.confirmFavorites,
+      setFilteredCoins: this.setFilteredCoins
     };
   }
 
@@ -70,6 +71,8 @@ export class AppProvider extends Component {
   setPage = page => {
     this.setState({ page });
   };
+
+  setFilteredCoins = filteredCoins => this.setState({ filteredCoins });
 
   render() {
     return (
