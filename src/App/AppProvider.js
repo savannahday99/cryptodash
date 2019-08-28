@@ -35,7 +35,7 @@ export class AppProvider extends Component {
   fetchPrices = async () => {
     if (this.state.firstVisit) return;
     let prices = await this.prices();
-    console.log(prices);
+    //console.log(prices);
     // We must filter the empty price objects
     prices = prices.filter(price => Object.keys(price).length);
     this.setState({ prices });
